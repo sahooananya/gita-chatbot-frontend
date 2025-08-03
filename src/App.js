@@ -35,7 +35,7 @@ const App = () => {
     setInput('');
 
     try {
-      const response = await axios.post('https://bhagvaadgitachatbot.onrender.com', {
+      const response = await axios.post('http://127.0.0.1:8000/suggest', {
         text: input,
         language: 'english',
       });
